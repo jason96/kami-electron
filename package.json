@@ -26,5 +26,17 @@
     "electron-webpack": "^2.7.4",
     "html-loader": "1.0.0-alpha.0",
     "webpack": "^4.42.1"
+  },
+  "electronWebpack": {
+    "staticSourceDirectory": "static",
+    "commonSourceDirectory": "src/common",
+    "main": {
+      "extraEntries": ["@/preload.js"],
+      "sourceDirectory": "src/main",
+      "webpackConfig": "custom.webpack.additions.js"
+    },
+    "renderer":{
+      "sourceDirectory": "src/renderer"
+    }
   }
 }
