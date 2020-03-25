@@ -1,0 +1,36 @@
+#toolbarViewerLeft {
+  -webkit-app-region: drag;
+}
+button {
+  -webkit-app-region: no-drag;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #bcbcbf;
+}
+
+::-webkit-scrollbar:window-inactive{
+  background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #bcbcbf;
+}
+
+::-webkit-scrollbar-track:window-inactive {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background-color: transparent;
+}

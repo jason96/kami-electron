@@ -1,0 +1,30 @@
+{
+  "name": "Kami",
+  "version": "1.0.0",
+  "description": "A Kami Electron application",
+  "main": "src/main/index.js",
+  "scripts": {
+    "start": "electron --inspect=5858 .",
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "Kami"
+  ],
+  "author": "srh89",
+  "license": "MIT",
+  "dependencies": {
+    "source-map-support": "^0.5.16"
+  },
+  "devDependencies": {
+    "electron": "^8.2.0",
+    "electron-builder": "^22.4.1",
+    "electron-webpack": "^2.7.4",
+    "html-loader": "1.0.0-alpha.0",
+    "webpack": "^4.42.1"
+  }
+}
