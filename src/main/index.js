@@ -6,8 +6,8 @@ import * as fs from 'fs'
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 900,
+    height: 800,
     frame:false,
     backgroundColor: '#454647',
     webPreferences: {
